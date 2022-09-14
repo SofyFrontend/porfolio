@@ -1,0 +1,27 @@
+:root{
+    --negro: #04080F;
+    --azul-oscuro: #507dbc;
+    --azul-medio: #a1c6ea;
+    --azul-claro: #bbd1ea;
+    --blanco: #fff;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--negro);
+    height: 75vh;
+}
+
+header h1, header span{
+    color: var(--blanco)
+}
+
+#sobre-mi{
+    background-color: var(--azul-claro);
+height: 50vh;
+}
