@@ -1,3 +1,4 @@
+/* declaración de variables y estilos generales */
 :root{
     --negro: #04080F;
     --azul-oscuro: #507dbc;
@@ -11,17 +12,70 @@
     padding: 0%;
     box-sizing: border-box;
 }
+/*estilo comun a todos los titulos de las secciones*/
+h2{
+    text-align: center;
+    font-size: 2em;
+}
 
+/* estilo de la cabecera  */
 header{
     background-color: var(--negro);
     height: 75vh;
+/* definir el layout de la cabecera */
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 10% 1fr;
+    grid-template-areas:"logo menu "
+                        "nombre imagen ";
+}
+header div span{
+    grid-area: logo;
+    color: var(--blanco);
+}
+header nav{
+    grid-area: menu;
+    background-color: var(--azul-oscuro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header h1, header span{
-    color: var(--blanco)
+a{
+    text-decoration: none;
+    color:#fff;
+   
+}
+#avatar_1{
+    grid-area: imagen;
+    background-image:url(../imagenes/laptop\ reading.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: lightgrey; 
+}
+header h1{
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-area: nombre;
+    margin-left: 2vw;
+    font-size:5rem ;
+    text-align: end;
 }
 
+/* estilo de la sección sobre mi  */
 #sobre-mi{
     background-color: var(--azul-claro);
 height: 50vh;
+padding: 5vw;
 }
+#sobremi_titulo{
+    
+}
+#sobremi-parrafo{
+    margin-top: 5vh;
+    font-size: 1.25em;
+}
+
