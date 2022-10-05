@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sofia Acevedo Delgado</title>
+    <link rel="icon" href="imagenes/iconos/favicon.png">
     <link href="estilo/estilo.css" rel="stylesheet">
-    <script scr="script/script.js"></script>
+    <script src="script/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 <body>
     <header id="inicio">
         <div class="sidenav">
-            <span> PORFOLIO </span>
+            <span> PORTFOLIO </span>
             
             <h1>
                 <span class="letra_azul">S</span>
@@ -39,25 +40,24 @@
                 <img src="imagenes/iconos/netlify.svg" alt="icono de netlify, con enlace al perfil" class="rrss">
             </div>
             <nav> 
-                <a href="#inicio">Inicio</a>
+                <a href="#inicio"> Inicio </a>
                 <a href="#sobre-mi">Sobre mi</a>
                 <a href="#trabajos">Trabajos</a>
-                <a href="#contacto">Contacto</a>
             </nav>
         </div>
-        <div id="avatar_1"></div>
+        <div id="avatar_1"> <!--<img src="imagenes/iconos/abajo.gif" alt="icono de flechas invitano a hacer scroll" id="scroll">--> </div>
     </header>
     <section id="sobre-mi">
         <h2 id="sobremi_titulo">
             Sobre mi
         </h2>
         <p id="sobremi-parrafo"> 
-            Me gusta el desarroll web en código HTML, CSS y JS, también uso 
+            Me gusta el desarrollo web en código HTML, CSS y JS, también uso 
             gestores de contenido como el wordpress. <br> <br>
-            Tengo formación de diseño de interfaces (UI) y diseño de experiencia de usuario (UX)<br><br>
+            Tengo formación de diseño de interfaces (UI), diseño de experiencia de usuario (UX) y uso de Figma<br><br>
             Actualmente trabajo como docente del certificado de profesionalidad de
-            confección y publicación de páginas webs, en la isla de Lanzarote. <br>
-            <!-- En la actualidad estoy haciendo curso para actualizarme en Diseño UI y diseño UX, -->
+            confección y publicación de páginas webs, en la isla de Lanzarote. <br><br>
+            
         </p>
         
     </section>
@@ -65,14 +65,43 @@
 <h2 id="trabajos_titulo">
     Trabajos
 </h2>
-<div id="galeria_container">
-    <img src="imagenes/Logo.png" alt="" id="imagen1">
-    <!-- <img src="imagenes/Logo.png" alt="" id="imagen2"> -->
-    <img src="imagenes/capturasWeb/mini_galeria1_desktop.png" alt="" id="imagen2">
-    <img src="imagenes/capturasWeb/mini_galeria1_movil.png" alt="" id="imagen3">
-    <img src="imagenes/capturasWeb/mini_webMiguelAngel.png" alt="" id="imagen4">
-    <img src="imagenes/capturasWeb/donarApp.png" alt="" id="imagen5">
-    <!-- <img src="" alt="" id="imagen7"> -->
+<!-- menu para filtrar los elementos segun web o diseño ui/ux -->
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Mostrar Todo</button>
+    <button class="btn" onclick="filterSelection('web')"> Maquetación web</button>
+    <button class="btn" onclick="filterSelection('desing')"> Diseño UX/UI</button>
+    <!-- <button class="btn" onclick="filterSelection('sketch')">Sketch Up </button> -->
+</div>
+<!-- <div class="container">
+    <div class="filterDiv web">BMW</div>
+    <div class="filterDiv web ">Orange</div>
+    <div class="filterDiv web">Volvo</div>
+    <div class="filterDiv desing">Red</div>
+    <div class="filterDiv web ">Mustang</div>
+    <div class="filterDiv desing">Blue</div>
+    <div class="filterDiv web">Cat</div>
+    <div class="filterDiv desing">Dog</div>
+   </div> -->
+<div class="container" id="galeria_container" >
+    <div class="filterDiv desing">
+         <img src="imagenes/Logo.png" alt="" id="imagen1">
+    </div>
+    <div class="filterDiv web"> 
+        <img src="imagenes/capturasWeb/mini_galeria1_desktop.png" alt="" id="imagen2"class="filterDiv web">
+    </div>
+    <div class="filterDiv web"> 
+        <img src="imagenes/capturasWeb/mini_galeria1_movil.png" alt="" id="imagen3"class="filterDiv web">
+    </div>
+    <div class="filterDiv web"> 
+        <img src="imagenes/capturasWeb/mini_webMiguelAngel.png" alt="" id="imagen4"class="filterDiv web">
+    </div>
+    <div class="filterDiv desing"> 
+        <img src="imagenes/capturasWeb/donarApp.png" alt="" id="imagen5"class="filterDiv desing">
+    </div>
+    <div class="filterDiv desing"> 
+        <img src="imagenes/capturasWeb/sorteo.png" alt="" id="imagen6" class="filterDiv desing">
+    </div>
+</div>
     </section>
 </body>
 </html>

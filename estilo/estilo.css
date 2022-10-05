@@ -14,6 +14,42 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/*codigo copiado de howtow3c y adaptado al diseño filtro de elementos*/
+.container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Estilo de botones */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: var(--azul-medio);
+    cursor: pointer;
+  }
+  
+  /* Cambia el color del fondo cuando  mouse-over */
+  .btn:hover {
+    background-color: var(--azul-oscuro);
+  }
+  
+  /* cambia el color a oscuro cuando esta activa */
+  .btn.active {
+    background-color: var(--oscuro);
+    color: white;
+  }
+  /* fin del código de howtow3c filtro de elementos*/
+
+
 /*estilo comun a todos los titulos de las secciones*/
 h2{
     text-align: center;
@@ -32,11 +68,8 @@ header{
     grid-template-areas:"nombre imagen "
                         "menu imagen";
 }
-/* header div{
-    position:fixed;
-width: 30%;
-z-index: 1;
-top: 0; */
+
+/* codigo para la barra fija*/
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height*/ 
 width: 30%;/* Set the width of the sidebar */ 
@@ -49,6 +82,9 @@ width: 30%;/* Set the width of the sidebar */
     padding-top: 20px;
   
 }
+/*fin del código de la barra fija*/
+
+/*resto de estilo para los elementos que estan en la barra fija*/
 header div span{
     grid-area: logo;
     color: var(--blanco);
@@ -63,6 +99,9 @@ header nav{
 }
 a:hover{
     background-color: var(--azul-oscuro);
+    padding-left:100px;
+    padding-right: 100px;
+
 }
 
 a{
@@ -86,6 +125,7 @@ header h1{
     justify-content: end;
     grid-area: nombre;
     margin-left: 2vw;
+    padding-right:5% ;
     font-size:5rem ;
     text-align: end;
     font-family: 'Bree Serif', serif;
@@ -105,6 +145,11 @@ header h1{
 }
 .rrss{
     max-width: 40px;
+}
+#scroll{
+    position:absolute;
+    bottom: 0;
+    left: 45%;
 }
 /* estilo de la sección sobre mi  */
 #sobre-mi{
@@ -127,13 +172,14 @@ text-decoration: underline lightgrey;
 
 /* estilo de la sección trabajos*/
 #trabajos{
-    margin-bottom: 5%;
+    padding: 5vw;
     margin-left: 30%;
 }
 #trabajos_titulo{
-    color:var(--oscuro)   
+    color:var(--oscuro);
+    margin-bottom: 5%;   
    }
-   #trabajos_titulo:hover{
+#trabajos_titulo:hover{
     text-shadow:5px 5px lightgrey;
     text-decoration: underline lightgrey;
     }
@@ -150,6 +196,8 @@ text-decoration: underline lightgrey;
 }
 #imagen2{
     grid-area: foto2;
+    margin-left: auto;
+    margin-right: auto;
 }
 #imagen3{
     grid-area: foto3;
@@ -158,6 +206,8 @@ text-decoration: underline lightgrey;
 }
 #imagen4{
     grid-area: foto4;
+    margin-left: auto;
+    margin-right: auto;
    }
 #imagen5{
     grid-area: foto5;
@@ -169,12 +219,3 @@ text-decoration: underline lightgrey;
     margin-left: auto;
     margin-right: auto;    
 }
-
-/* estilo de la seccion de contacto*/
-/* #contacto_titulo{
-    color:var(--oscuro)   
-}
-#contacto_titulo:hover{
-    text-shadow:5px 5px lightgrey;
-    text-decoration: underline lightgrey;
-    } */
