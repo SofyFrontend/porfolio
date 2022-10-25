@@ -13,18 +13,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="movil">
+        <h1 class="movil">
+            versión movil proximamente
+        </h1>
+    </div>
+    <div id="movil_footer">
+        <a href="html/alumnos.html">alumnos</a>
+    </div>
     <header id="inicio">
         <div class="sidenav">
-            <span> PORTFOLIO </span>
+            <!-- <span> PORTFOLIO </span> -->
             
-            <h1>
+            <h1 id="h1_nombre">
                 <span class="letra_azul">S</span>
                 <span class="letra_malva">o</span>
                 <span class="letra_azul">f</span>
                 <span class="letra_malva">í</span>
                 <span class="letra_azul">a</span>
-                </h1>
-                <h1>
+            </h1>
+            <h1 id="h1_apellido">
                 <span class="letra_malva">A</span>
                 <span class="letra_azul">c</span>
                 <span class="letra_malva">e</span>
@@ -35,17 +43,24 @@
                 <br>
             </h1>
             <div class="contenedor_rrss">
-                <img src="imagenes/iconos/github.svg" alt="icono de github, con enlace al perfil de github" class="rrss">
-                <img src="imagenes/iconos/linkedin.gif" alt="icono animado de linkedin, con enlace al perfil" class="rrss">
+                <a href="https://github.com/SofyFrontend?tab=repositories">
+                    <img src="imagenes/iconos/github.svg" alt="icono de github, con enlace al perfil de github" class="rrss">
+                </a>
+                <a href="https://www.linkedin.com/in/sofia-acevedo/">
+                    <img src="imagenes/iconos/linkedin.gif" alt="icono animado de linkedin, con enlace al perfil" class="rrss">
+                </a>
+                <a>
                 <img src="imagenes/iconos/netlify.svg" alt="icono de netlify, con enlace al perfil" class="rrss">
+                </a>
             </div>
             <nav> 
                 <a href="#inicio"> Inicio </a>
                 <a href="#sobre-mi">Sobre mi</a>
                 <a href="#trabajos">Trabajos</a>
+                <a href="html/alumnos.html">Alumnos</a>
             </nav>
         </div>
-        <div id="avatar_1"> <!--<img src="imagenes/iconos/abajo.gif" alt="icono de flechas invitano a hacer scroll" id="scroll">--> </div>
+        <div id="avatar_1">  </div>
     </header>
     <section id="sobre-mi">
         <h2 id="sobremi_titulo">
@@ -72,36 +87,29 @@
     <button class="btn" onclick="filterSelection('desing')"> Diseño UX/UI</button>
     <!-- <button class="btn" onclick="filterSelection('sketch')">Sketch Up </button> -->
 </div>
-<!-- <div class="container">
-    <div class="filterDiv web">BMW</div>
-    <div class="filterDiv web ">Orange</div>
-    <div class="filterDiv web">Volvo</div>
-    <div class="filterDiv desing">Red</div>
-    <div class="filterDiv web ">Mustang</div>
-    <div class="filterDiv desing">Blue</div>
-    <div class="filterDiv web">Cat</div>
-    <div class="filterDiv desing">Dog</div>
-   </div> -->
 <div class="container" id="galeria_container" >
     <div class="filterDiv desing">
          <img src="imagenes/Logo.png" alt="" id="imagen1">
     </div>
     <div class="filterDiv web"> 
-        <img src="imagenes/capturasWeb/mini_galeria1_desktop.png" alt="" id="imagen2"class="filterDiv web">
+        <img src="imagenes/capturasWeb/mini_galeria1_desktop.png" alt="" id="imagen2" class="filterDiv web">
     </div>
     <div class="filterDiv web"> 
-        <img src="imagenes/capturasWeb/mini_galeria1_movil.png" alt="" id="imagen3"class="filterDiv web">
+        <img src="imagenes/capturasWeb/mini_galeria1_movil.png" alt="" id="imagen3" class="filterDiv web">
     </div>
     <div class="filterDiv web"> 
-        <img src="imagenes/capturasWeb/mini_webMiguelAngel.png" alt="" id="imagen4"class="filterDiv web">
+        <img src="imagenes/capturasWeb/mini_webMiguelAngel.png" alt="" id="imagen4" class="filterDiv web">
     </div>
     <div class="filterDiv desing"> 
-        <img src="imagenes/capturasWeb/donarApp.png" alt="" id="imagen5"class="filterDiv desing">
+        <img src="imagenes/capturasWeb/donarApp.png" alt="" id="imagen5" class="filterDiv desing">
     </div>
     <div class="filterDiv desing"> 
         <img src="imagenes/capturasWeb/sorteo.png" alt="" id="imagen6" class="filterDiv desing">
     </div>
+    <div class="filterDiv desing"> 
+        <img src="imagenes/capturasWeb/mini_contratoalquiler.png" alt="" id="imagen7" class="filterDiv desing">
+    </div>
 </div>
     </section>
-</body>
+    </body>
 </html>
